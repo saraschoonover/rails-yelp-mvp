@@ -1,0 +1,15 @@
+<h2><strong>Restaurant</strong></h2>
+<div class="card-container">
+<ul class="list-group shadow-sm p-1 my-2">
+  <% @restaurants.each do |restaurant| %>
+  <div class="card" style="width: 18rem;">
+      <div class="card-body">
+    <li class="list-group-item"><%= restaurant.name %><br /><%= restaurant.id %><br /><%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary"%>
+</li>
+</div>
+  </div>
+  <% end %>
+
+</ul>
+<br>
+</div>
